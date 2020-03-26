@@ -16,8 +16,31 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor:Colors.grey[600],
       ),
-      body: Center(
-        child: Image.asset('assets/space1.jpg'),
+      body: Container(
+        padding: EdgeInsets.symmetric(horizontal: 30.0,vertical: 10.0),
+        margin: EdgeInsets.all(55.0),
+        color:Colors.grey[300],
+        child: Text('hello'),
+
+      ),
+      /*Center(
+        child:
+        FlatButton.icon(
+          onPressed: (){
+            print('you clicked me');
+          },
+          icon: Icon(
+              Icons.desktop_windows
+          ),
+          textColor: Colors.white,
+          label: Text('click me'),
+          color: Colors.lightBlue,
+        ),*/
+        //Icon(
+        //  Icons.desktop_windows,
+        //  color: Colors.lightBlue,
+        //  size: 50.0,)
+            //Image.asset('assets/space1.jpg'),
             //image: AssetImage('assets/space2.jpg'),
             //NetworkImage('https://images.unsplash.com/photo-1579909990663-0a8557ca9785?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')
 
@@ -32,7 +55,7 @@ class Home extends StatelessWidget {
          // ),
         //),
         
-      ),
+
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: (){
