@@ -17,7 +17,31 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor:Colors.grey[600],
       ),
-      body: Row(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Container(
+            padding: EdgeInsets.all(20.0),
+            color:Colors.redAccent,
+            child: 
+              Text('One'),
+          ),
+          Container(
+            padding: EdgeInsets.all(30.0),
+            color:Colors.indigoAccent,
+            child:
+            Text('Two'),
+          ),
+          Container(
+            padding: EdgeInsets.all(40.0),
+            color:Colors.brown,
+            child:
+            Text('Three'),
+          )
+        ],
+      )
+      /*Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -34,7 +58,7 @@ class Home extends StatelessWidget {
             child: Text('Container'),
           )
         ],
-      ),
+      ),*/
       /*Container(
         padding: EdgeInsets.symmetric(horizontal: 30.0,vertical: 10.0),
         margin: EdgeInsets.all(55.0),
@@ -75,7 +99,7 @@ class Home extends StatelessWidget {
         //),
         
 
-      floatingActionButton: FloatingActionButton(
+      ,floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: (){
 
