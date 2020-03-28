@@ -17,7 +17,40 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor:Colors.grey[600],
       ),
-      body: Column(
+      body: Row(
+        children: <Widget>[
+          Expanded(
+            flex: 3,
+              child:Image.asset('assets/space1.jpg') ),
+          Expanded(
+            flex:2,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.brown,
+              child: Text('1')
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.amberAccent,
+                child: Text('2')
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.redAccent,
+                child: Text('3')
+            ),
+          ),
+        ],
+      )
+
+    /* Expanded es como flexbox
+    Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -41,7 +74,7 @@ class Home extends StatelessWidget {
           )
         ],
       )
-      /*Row(
+      Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
