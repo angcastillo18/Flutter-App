@@ -6,7 +6,7 @@ import 'package:worldtime/pages/loading.dart';
 void main() {
   runApp(MaterialApp(
     //initial screen
-    initialRoute: '/home',
+    initialRoute: '/',
     //crear el routing como map
     routes:{
       '/':(context)=>Loading(),
