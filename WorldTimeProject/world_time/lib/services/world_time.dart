@@ -31,7 +31,7 @@ class WorldTime{
       //restarle el offset
       now=now.add(Duration(hours:int.parse(offset)));
       //setTime property
-      isDaytime= now.hour > 6 && now.hour < 20 ;
+      isDaytime= now.hour > 6 && now.hour < 20 ? true : false;
       time=DateFormat.jm().format(now);
     } catch (e) {
       print('caught error: $e');
